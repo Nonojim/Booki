@@ -157,17 +157,10 @@ header {
     font-weight: 700;
 }
 
-input::placeholder {
-    color: #000;
-    font-size: 1.125em/3;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
 
 .bouton-rechercher {
     background-color: #0065FC;
     color: white;
-    border-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
     border: none;
     font-size: 1.125em;
@@ -219,21 +212,16 @@ input::placeholder {
 
 .hebergements-cards {
     display: flex;
-    flex-direction: column;
-}
-
-.hebergements-cards-row1, 
-.hebergements-cards-row2 {
-    display: flex;
     flex-direction: row;
-    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
-    width: 100%;
+    width: 30%;
 }
 
 .hebergements-cards img {
@@ -275,7 +263,6 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     gap: 1em;
-    height: 27em;
 }
 
 .activites-cards .card {
@@ -310,19 +297,22 @@ footer {
     background-color: var(--main-bg-color);
 }
 
-nav {
+footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 15em;
+    flex-wrap: wrap;
+    
 }
 
-nav div {
+footer div {
     display: flex;
     flex-direction: column;
+    padding: 1.25em;
+    margin-right: auto;
 }
 
-nav a {
+footer a {
     text-decoration: none;
     color: #000;
     margin-bottom: 1em;
@@ -367,4 +357,15 @@ nav a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    footer {
+        flex-direction: column;
+    }
+
+    .activites-cards {
+        flex-direction: column;
+    }
+
+    .main-container {
+        padding: 0;
+    }
 }
