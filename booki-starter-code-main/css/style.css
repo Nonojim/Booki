@@ -285,6 +285,12 @@ h1+p {
     margin-bottom: 5px;
 }
 
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
+
 .activites {
     margin: 2em 0em;
     padding-left: 30px;
