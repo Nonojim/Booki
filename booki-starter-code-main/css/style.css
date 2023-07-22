@@ -339,8 +339,9 @@ h1+p {
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     box-sizing: border-box;
+    height: 15%;
 }
 
 .activites-cards .card-title {
@@ -422,11 +423,25 @@ footer a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards img {
+        height: 80%;
+    }
+
+    .activites-cards .card-content {
+        height: 20%;
+        justify-content: center;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    header img {
+        padding-left: 2em;
+    }
+
     footer {
         flex-direction: column;
     }
@@ -437,5 +452,41 @@ footer a {
 
     .main-container {
         padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .bouton-menu {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .bouton-menu a {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-bottom: transparent;
+        border-width: 2px;
+        padding-bottom: 1em;
+        border-width: 2px;
+        border-style: solid;
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+    }
+
+    .bouton-menu a:hover {
+        border-bottom: #0065FC;
+        border-width: 2px;
+        border-style: solid;
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        color: #0065FC;
     }
 }
