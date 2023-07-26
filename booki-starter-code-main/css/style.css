@@ -209,6 +209,14 @@ h1+p {
     font-weight: 700;
 }
 
+.bouton-rechercher:hover {
+    cursor: pointer;
+}
+
+.glass {
+    display: none;
+}
+
 .filter-bar {
     display: flex;
     flex-direction: row;
@@ -488,5 +496,13 @@ footer a {
         border-right-style: none;
         border-bottom-style: solid;
         color: #0065FC;
+    }
+
+    .bouton-rechercher {
+        display: none;
+    }
+
+    .glass {
+        display: inline-block;
     }
 }
