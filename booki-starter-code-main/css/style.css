@@ -93,7 +93,7 @@ body {
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 140px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -170,14 +170,14 @@ h1+p {
 
 .fa-location-dot {
     color: #000;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
+    padding-left: 1em;
     padding-bottom: 0.7em;
     padding-top: 23px;
     border: 1px;
     background-color: #f2f2f2;
     border-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
+    width: 1.5em;
 }
 
 .search-bar {
@@ -224,6 +224,11 @@ h1+p {
     font-weight: 700;
 }
 
+.menu-bouton-filtre {
+    display: flex;
+    flex-direction: row;
+}
+
 .bouton-filtre {
     display: inline-block;
     color: black;
@@ -235,7 +240,7 @@ h1+p {
 }
 
 .bouton-filtre .fa-solid {
-    margin-right: 0.5em;
+    margin-right: 8.9%;
 }
 
 .bouton-filtre:hover {
@@ -462,6 +467,11 @@ footer a {
         padding: 0;
     }
 
+    .accueil-recherche {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
     header {
         flex-direction: column;
     }
@@ -472,9 +482,9 @@ footer a {
 
     .bouton-menu {
         width: 100%;
-        justify-content: center;
         padding-bottom: 0em;
     }
+
 
     .bouton-menu a {
         margin: 0;
@@ -503,13 +513,72 @@ footer a {
         color: #0065FC;
     }
 
+    #localisation {
+        width: 70%;
+    }
+
     .bouton-rechercher {
         display: none;
         padding: 15px;
         border-radius: 15px;
+        width: 3em;
     }
 
     .glass {
         display: inline-block;
+    }
+
+    .menu-bouton-filtre {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-bouton-filtre div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bouton-filtre {
+        margin-bottom: 1em;
+        margin-left: 0.5em;
+        margin-right: 0em;
+        width: 50%;
+        padding: 0.75em 0.22em;
+    }
+
+    .populaires {
+        order: -1;
+        margin-top: 0;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards .card {
+        width: inherit;
+        margin-top: 1em;
+    }
+
+    .hebergements {
+        background-color: white!important;
+    }
+
+    .hebergements-cards {
+        flex-direction: column;
+    }
+
+    .hebergements-cards .card {
+        width: inherit;
+    }
+
+    .activites-cards .card {
+        width: inherit;
+    }
+
+    .activites-cards img {
+        height: 140px;
     }
 }
