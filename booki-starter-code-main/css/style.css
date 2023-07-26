@@ -240,7 +240,7 @@ h1+p {
 }
 
 .bouton-filtre .fa-solid {
-    margin-right: 8.9%;
+    margin-right: 0.5em;
 }
 
 .bouton-filtre:hover {
@@ -546,6 +546,10 @@ footer a {
         margin-right: 0em;
         width: 50%;
         padding: 0.75em 0.22em;
+    }
+
+    .bouton-filtre .fa-solid {
+        margin-right: 8.9%;
     }
 
     .populaires {
