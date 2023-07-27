@@ -120,7 +120,10 @@ body {
     margin-bottom: 5px;
 }
 
-/*code_ajouter_par_moi_meme_pour_desktop*/
+a {
+    text-decoration: none;
+    color: #000;
+}
 
 header {
     display: flex;
@@ -386,8 +389,6 @@ footer div {
 }
 
 footer a {
-    text-decoration: none;
-    color: #000;
     margin-bottom: 1em;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -529,27 +530,21 @@ footer a {
     }
 
     .menu-bouton-filtre {
-        flex-direction: column;
+        flex-wrap: wrap;
         width: 100%;
-    }
-
-    .menu-bouton-filtre div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
     }
 
     .bouton-filtre {
         margin-bottom: 1em;
-        margin-left: 0.5em;
         margin-right: 0em;
-        width: 50%;
+        width: 42%;
         padding: 0.75em 0.22em;
     }
 
     .bouton-filtre .fa-solid {
-        margin-right: 8.9%;
+        margin-right: 4.5%;
+        margin-left: 4.5%;
     }
 
     .populaires {
@@ -584,5 +579,18 @@ footer a {
 
     .activites-cards img {
         height: 140px;
+    }
+}
+
+@media (max-width: 364px) {
+    .bouton-filtre {
+        padding: 0.75em 0em;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .bouton-filtre .fa-solid {
+        margin-right: 0;
+        margin-left: 0;
     }
 }
