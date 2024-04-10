@@ -1,2 +1,2 @@
 # Booky_Nonojim
-This is my repository for Booky integration
+This is my repository for Booki integration
